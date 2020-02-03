@@ -26,6 +26,11 @@
       <section class="form">
         <h2 class="visually-hidden">Фильтр товаров</h2>
          <form class="filter-form" action="/nerds" method="post">
+          <div class="filter-form-value">
+
+
+          </div>
+
           <div class="filter-form-radio-area">
             <p class="radio-area-title">Сетка</p>
              <ul>
@@ -147,26 +152,26 @@
       </section>
 
         <section class="form-feedback">
-        <h2 class="visually-hidden">Форма обратной связи</h2>
-          <div class="feedback-form">
-            <form class="feedback-form" action="/nerds" method="post">
-            <p class="feedback-form-title">Напишите нам</p>
-              <label>
-                <input type="text" name="Name" placeholder="Имя Фамилия">
-                  Ваше имя
-               </label>
+          <h2 class="visually-hidden">Форма обратной связи</h2>
+            <div class="feedback-form">
+              <form class="feedback-form" action="/nerds" method="post">
+              <p class="feedback-form-title">Напишите нам</p>
                 <label>
-                <input type="text" name="email" placeholder="email@exemple.com">
-                   Ваш e-mail:
-              </label>
-              <label>
-                <textarea name="comment" rows="10">В свободной форме</textarea>
-                  Тест письма:
-              </label>
-              <button class="feedback-form-button" type="submit">Отправить</button>
-            </form>
-           </div>
-         </section>
+                    Ваше имя:
+                    <input type="text" name="Name" placeholder="Имя Фамилия">
+                 </label>
+                  <label>
+                    Ваш e-mail:
+                  <input type="text" name="email" placeholder="email@exemple.com">
+                </label>
+                <label>
+                  Текст письма:
+                  <textarea name="comment" rows="10">В свободной форме</textarea>
+                </label>
+                <button class="feedback-form-button" type="submit">Отправить</button>
+              </form>
+             </div>
+           </section>
 
         </main>
 
