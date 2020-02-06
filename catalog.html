@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -28,29 +30,33 @@
          <form class="filter-form" action="/nerds" method="post">
           <div class="filter-form-value">
             <input type="range" min="1" max="15000">
-            от
+            <label>
+              от
             <input type="number" min="1" max="15000">
-            до
+            </label>
+            <label>
+              до
             <input type="number" min="1" max="15000">
+            </label>
           </div>
 
           <div class="filter-form-radio-area">
             <p class="radio-area-title">Сетка</p>
              <ul>
               <li><label>
-                <input type="radio" name="adaptive" checked>
+                <input type="radio" name="radiobtn" value="adaptive" checked>
                   Адаптивная
                </label>
               </li>
               <li>
                 <label>
-                <input type="radio" name="static">
+                <input type="radio" name="radiobtn" value="fix">
                    Фиксированная
               </label>
             </li>
             <li>
               <label>
-                <input type="radio" name="liquid">
+                <input type="radio" name="radiobtn" value="liquid">
                   Резиновая
               </label>
               </li>
@@ -107,22 +113,65 @@
         </ul>
         <ul class="catalog-product-list">
           <li class="catalog-product-list-item">
-             <img src="img/img-sedona.jpg" width="360" height="576" alt="шаблон Sedona">
+            <div class="catalog-item item-sedona">
+            <img src="img/img-sedona.jpg" width="360" height="576" alt="шаблон Sedona">
+               <div class="item-hover item-sedona-hover">
+                <p>Sedona</p>
+                <p>Информационный сайт для туристов</p>
+                <a class="hover-btn" href="#">9900 руб.</a>
+              </div>
+          </div>
           </li>
           <li class="catalog-product-list-item">
+            <div class="catalog-item item-pink">
             <img src="img/img-pink.jpg" width="360" height="576" alt="шаблон Pink">
+               <div class="item-hover item-pink-hover">
+                 <p>Pink app</p>
+                 <p>Продуктовый лэндинг приложения для IOS и Android</p>
+                 <a class="hover-btn" href="#">9900 руб.</a>
+             </div>
+             </div>
+
           </li>
           <li class="catalog-product-list-item">
+            <div class="catalog-item item-barbershop">
             <img src="img/img-barbershop.jpg" width="360" height="576" alt="шаблон Borodinski">
+               <div class="item-hover item-barbershop-hover">
+                  <p>Barbershop</p>
+                  <p>Сайт салона красоты. Для мужчин, да.</p>
+                  <a class="hover-btn" href="#">9900 руб.</a>
+               </div>
+            </div>
           </li>
           <li class="catalog-product-list-item">
-            <img src="img/img-mishka.jpg" width="360" height="576" alt="шаблон Mishka">
+           <div class="catalog-item item-mishka">
+             <img src="img/img-mishka.jpg" width="360" height="576" alt="шаблон Mishka">
+              <div class="item-hover item-mishka-hover">
+                 <p>Mishka</p>
+                <p>Интернет-магазин вязанных игрушек</p>
+                <a class="hover-btn" href="#">9900 руб.</a>
+              </div>
+          </div>
           </li>
           <li class="catalog-product-list-item">
+            <div class= "catalog-item item-aplus">
             <img src="img/img-aplus.jpg" width="360" height="576" alt="шаблон Aplus">
+              <div class="item-hover item-aplus-hover">
+                <p>A plus</p>
+                <p>Лендинг курсов повышения квалификации</p>
+                <a class="hover-btn" href="#">9900 руб.</a>
+              </div>
+          </div>
           </li>
           <li class="catalog-product-list-item">
+            <div class="catalog-item item-kvast">
             <img src="img/img-kvast.jpg" width="360" height="576" alt="шаблон Кваст">
+              <div class="item-hover item-kvast-hover">
+                <p>Kvast</p>
+                <p>Промо-сайт производителя крафтового кваса</p>
+                <a class="hover-btn" href="#">9900 руб.</a>
+              </div>
+          </div>
           </li>
         </ul>
           <ul class="catalog-pagination">
@@ -154,27 +203,6 @@
         </div>
       </section>
 
-        <section class="form-feedback">
-          <h2 class="visually-hidden">Форма обратной связи</h2>
-            <div class="feedback-form">
-              <form class="feedback-form" action="/nerds" method="post">
-              <p class="feedback-form-title">Напишите нам</p>
-                <label>
-                    Ваше имя:
-                    <input type="text" name="Name" placeholder="Имя Фамилия">
-                 </label>
-                  <label>
-                    Ваш e-mail:
-                  <input type="text" name="email" placeholder="email@exemple.com">
-                </label>
-                <label>
-                  Текст письма:
-                  <textarea name="comment" rows="10">В свободной форме</textarea>
-                </label>
-                <button class="feedback-form-button" type="submit">Отправить</button>
-              </form>
-             </div>
-           </section>
 
         </main>
 
@@ -189,6 +217,28 @@
         <span class="footer-text">Скидка 10% для друзей из социальных сетей.</span>
      </div>
     </footer>
+
+    <section class="form-feedback">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+        <div class="feedback-form">
+          <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="feedback-form-title">Напишите нам</p>
+            <label>
+                Ваше имя:
+                <input type="text" name="Name" placeholder="Имя Фамилия">
+             </label>
+              <label>
+                Ваш e-mail:
+              <input type="text" name="email" placeholder="email@exemple.com">
+            </label>
+            <label>
+              Текст письма:
+              <textarea name="comment" rows="10">В свободной форме</textarea>
+            </label>
+            <button class="feedback-form-button" type="submit">Отправить</button>
+          </form>
+         </div>
+       </section>
 
   </body>
 </html>

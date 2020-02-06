@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -26,16 +28,32 @@
       <h1 class="visually-hidden">Дизайн студия "Нердс"</h1>
       <div class="slider">
        <div class="container">
-        <b class="slider-tagline">Долго,дорого, скрупулезно.</b>
-        <p class="slider-text">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-        <a class="slider-button" href="#">Узнать больше</a>
-        <ul class="slider-pagination">
-          <li class="slider-pagination-page">1</li>
-          <li class="slider-pagination-page">2</li>
-          <li class="slider-pagination-page">3</li>
+         <div class="slider-1">
+           <b class="slider-tagline">Долго,дорого, скрупулезно.</b>
+           <p class="slider-text">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+           <a class="slider-button" href="#">Узнать больше</a>
+           <img class="slider-picture" src="img/slide1.png" width="698" height="413" alt="Картинка первого слайдера">
+         </div>
+         <div class="slider-2">
+          <b class="slider-tagline">Любим математику как никто другой</b>
+          <p class="slider-text">Никакого креатива, только математические формулы для расчета идельных пропорций</p>
+          <a class="slider-button" href="#">Узнать больше</a>
+          <img class="slider-picture" src="img/slide2.png" width="663" height="440" alt="Картинка второго слайдера">
+        </div>
+        <div class="slider-3">
+          <b class="slider-tagline">Только ночь, только хардкор</b>
+          <p class="slider-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается</p>
+          <a class="slider-button" href="#">Узнать больше</a>
+          <img class="slider-picture" src="img/slide3.png" width="759" height="411" alt="Картинка третьего слайдера">
+        </div>
+        <ul class="slider-indicator">
+          <li class="slider-indicator-page">1</li>
+          <li class="slider-indicator-page">2</li>
+          <li class="slider-indicator-page">3</li>
         </ul>
        </div>
       </div>
+
       <section class="features">
         <H2 class="visually-hidden">Список услуг</H2>
         <div class="container">
@@ -121,48 +139,49 @@
             <a href="#">Напишите нам</a>
           </div>
         <div class="feedback">
-          <h2 class="visually-hidden">Написать</h2>
-          <p>Напишите нам</p>
-          <button type="submit" class="feedback-button">Отправить</button>
+          <a href="#" class="feedback-button">Напишите нам</a>
         </div>
         </div>
         </section>
 
-        <section class="form-feedback">
-          <h2 class="visually-hidden">Форма обратной связи</h2>
-            <div class="feedback-form">
-              <form class="feedback-form" action="/nerds" method="post">
-              <p class="feedback-form-title">Напишите нам</p>
-                <label>
-                    Ваше имя:
-                    <input type="text" name="Name" placeholder="Имя Фамилия">
-                 </label>
-                  <label>
-                    Ваш e-mail:
-                  <input type="text" name="email" placeholder="email@exemple.com">
-                </label>
-                <label>
-                  Текст письма:
-                  <textarea name="comment" rows="10">В свободной форме</textarea>
-                </label>
-                <button class="feedback-form-button" type="submit">Отправить</button>
-              </form>
-             </div>
-           </section>
-
-    </main>
+      </main>
 
     <footer class="footer">
       <div class="container">
         <div class="footer-social clearfix">
-          <a class="footer-social-vkontakte social-btn" href="#">Вконтакте</a>
-          <a class="footer-social-facebook social-btn" href="#">Фейсбук</a>
-          <a class="footer-social-instagram social-btn" href="#">Инстаграм</a>
+          <ul>
+             <li> <a class="footer-social-vkontakte social-btn" href="#">Вконтакте</a></li>
+             <li> <a class="footer-social-facebook social-btn" href="#">Фейсбук</a></li>
+             <li> <a class="footer-social-instagram social-btn" href="#">Инстаграм</a></li>
+        </ul>
         </div>
         <b class="footer-tagline">Давайте дружить, это выгодно!</b>
         <span class="footer-text">Скидка 10% для друзей из социальных сетей.</span>
      </div>
     </footer>
+
+    <section class="form-feedback">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+        <div class="feedback-form">
+          <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="feedback-form-title">Напишите нам</p>
+          <a href="#" class="feedback-form-closebtn">×</a>
+            <label>
+                Ваше имя:
+                <input type="text" name="Name" placeholder="Имя Фамилия">
+             </label>
+              <label>
+                Ваш e-mail:
+              <input type="text" name="email" placeholder="email@exemple.com">
+            </label>
+            <label>
+              Текст письма:
+              <textarea name="comment" rows="10" placeholder="В свободной форме"></textarea>
+            </label>
+            <button class="feedback-form-button" type="submit">Отправить</button>
+          </form>
+         </div>
+       </section>
 
   </body>
 </html>
