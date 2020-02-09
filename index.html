@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+
     <header class="header">
      <div class="container">
       <nav class="navigation">
@@ -24,6 +25,7 @@
       </nav>
      </div>
     </header>
+
     <main>
       <h1 class="visually-hidden">Дизайн студия "Нердс"</h1>
       <div class="slider">
@@ -62,19 +64,19 @@
             <img src="img/advantage-picture-red.png" width="300" height="146" alt="Веб-сайты">
             <h3 class="feature-title">Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-            <a class="feature-button" href="#">Заказать</a>
+            <a class="feature-button btn-red" href="#">Заказать</a>
           </li>
           <li class="feature-item">
             <img src="img/advantage-picture-green.png" width="300" height="146" alt="Приложения">
             <h3 class="feature-title">Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="feature-button" href="#">Заказать</a>
+            <a class="feature-button btn-green" href="#">Заказать</a>
           </li>
           <li class="feature-item">
             <img src="img/advantage-picture-yellow.png" width="300" height="146" alt="веб-сайты">
             <h3 class="feature-title">Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="feature-button" href="#">Заказать</a>
+            <a class="feature-button btn-yellow" href="#">Заказать</a>
           </li>
         </ul>
       </div>
@@ -82,35 +84,35 @@
 
        <section class="content">
        <div class="container">
-        <h2 class="visually-hidden">О нас</h2>
-          <div class="description">
-           <p>Мы маленькая, но гордая дизайн-студия из Краснодара</p>
-           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
-           <p>Выполняем заказы на разработку</p>
-           <uL class="content-list">
-             <li class="content-list-item">Веб-сайтов любой сложности</li>
-             <li class="content-list-item">Мобильных приложений для IOS и Android</li>
-             <li class="content-list-item">Слайдшоу и видео для корпоративных презентаций</li>
-           </uL>
-       </div>
-       <aside class="aside">
-        <h2 class="visually-hidden">Наши достижения</h2>
-        <img class="aside-picture" src="img/nerds-picture.png" width="360" height="208" alt="Логотип">
-        <table class="aside-table">
-          <caption class="sidebar-table-caption">C 2004 года любим точность во всем:</caption>
-          <tr class="aside-table-row1">
-            <td>146<sup>%</sup></td>
-            <td>100<sup>%</sup></td>
-            <td>50<sup>%</sup></td>
-          </tr>
-          <tr class="sidebar-table-row2">
-            <td>Уровень самоотдачи</td>
-            <td>Соблюдение сроков</td>
-            <td>Минимальная предоплата</td>
-          </tr>
-        </table>
-       </aside>
-     </div>
+               <div class="description">
+                <h2 class="visually-hidden">О нас</h2>
+                 <p class="content-tagline">Мы маленькая, но гордая дизайн-студия из Краснодара</p>
+                 <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
+                 <p class="description-order">Выполняем заказы на разработку</p>
+                    <uL class="content-list">
+                       <li class="content-list-item">Веб-сайтов любой сложности</li>
+                       <li class="content-list-item">Мобильных приложений для IOS и Android</li>
+                       <li class="content-list-item">Слайдшоу и видео для корпоративных презентаций</li>
+                   </uL>
+               </div>
+               <div class="aside">
+                <h2 class="visually-hidden">Наши достижения</h2>
+                    <img class="aside-picture" src="img/nerds-picture.png" width="360" height="208" alt="Логотип">
+                    <table class="aside-table">
+                    <caption class="sidebar-table-caption">C 2004 года любим точность во всем:</caption>
+                    <tr class="aside-table-row1">
+                      <td>146<sup>%</sup></td>
+                      <td>100<sup>%</sup></td>
+                     <td>50<sup>%</sup></td>
+                    </tr>
+                    <tr class="sidebar-table-row2">
+                      <td>Уровень самоотдачи</td>
+                      <td>Соблюдение сроков</td>
+                      <td>Минимальная предоплата</td>
+                    </tr>
+                    </table>
+                </div>
+      </div>
      </section>
 
      <section class="partners">
@@ -138,9 +140,6 @@
             <a href="tel:+78122757575">тел. +7(812)275-75-75</a>
             <a href="#">Напишите нам</a>
           </div>
-        <div class="feedback">
-          <a href="#" class="feedback-button">Напишите нам</a>
-        </div>
         </div>
         </section>
 
@@ -149,14 +148,17 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-social clearfix">
-          <ul>
+          <ul class="footer-list">
              <li> <a class="footer-social-vkontakte social-btn" href="#">Вконтакте</a></li>
              <li> <a class="footer-social-facebook social-btn" href="#">Фейсбук</a></li>
              <li> <a class="footer-social-instagram social-btn" href="#">Инстаграм</a></li>
         </ul>
         </div>
-        <b class="footer-tagline">Давайте дружить, это выгодно!</b>
-        <span class="footer-text">Скидка 10% для друзей из социальных сетей.</span>
+         <div class="footer-text">
+            <b class="footer-tagline">Давайте дружить, это выгодно!</b>
+            <br>
+           <span class="footer-sale">Скидка 10% для друзей из социальных сетей.</span>
+        </div>
      </div>
     </footer>
 
@@ -175,13 +177,13 @@
               <input type="text" name="email" placeholder="email@exemple.com">
             </label>
             <label>
-              Текст письма:
+                Текст письма:
               <textarea name="comment" rows="10" placeholder="В свободной форме"></textarea>
             </label>
             <button class="feedback-form-button" type="submit">Отправить</button>
           </form>
-         </div>
-       </section>
+        </div>
+     </section>
 
   </body>
 </html>

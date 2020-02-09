@@ -1,0 +1,507 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color:#000000;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+}
+
+/* По непонятной причине не работает
+.visually-hidden {
+  position: absolute;
+  clip: rect (0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+*/
+
+.visually-hidden {
+  display: none;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 83px;
+  background-color: #eeeeee;
+}
+
+.header-logo {
+  width: 160px;
+  height: 67px;
+
+}
+
+.navigation-menu,
+.user-navigation {
+  list-style: none;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  /* Временно для сетки */
+  min-height: 70px;
+}
+
+.navigation-menu {
+  display: flex;
+}
+
+.navigation-menu-item {
+  margin-right: 47px;
+}
+
+.navigation-menu a,
+.user-navigation a{
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+
+.navigation-menu a:hover,
+.user-navigation a:hover {
+   color: #FB565A;
+}
+
+.navigation-menu a:active,
+.user-navigation a:active {
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 30px;
+  text-decoration: underline;
+}
+
+.navigation-current-item
+{
+border-bottom: 2px solid #fb565a;
+}
+
+.slider {display: none;
+}
+
+.features .container {
+  width: 1100px;
+  margin: 0;
+  margin: 80px 140px;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 80px;
+  padding: 0;
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 170px;
+}
+
+.feature-item {
+  text-align: left;
+  width: 300px;
+    /* Временно для сетки */
+    min-height: 170px;
+  }
+}
+
+/*почему-то не работает*/
+.feature-title {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.feature-item p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+}
+
+.feature-button {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.btn-red {
+  background-color: #FB565A;
+}
+
+.btn-green {
+  background-color: #00CA74;
+}
+
+.btn-yellow {
+  background-color: #EFC84A;
+}
+
+
+.page-title {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.content .container {
+  display: flex;
+  width: 1100px;
+  margin: 0;
+  margin: 80px 140px;
+  padding: 0px;
+}
+
+.description {
+  width: 650px;
+  /*временно*/
+  min-height: 525px;
+}
+
+/*по непонятным причинам не работает*/
+.description .content-tagline {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: left;
+    color: #000000;
+  }
+
+  .description p {
+      width: 616px;
+      height: 40px;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: #283136;
+  }
+
+  /*по непонятным причинам не работает*/
+  .description .description-order {
+    font-size: 56px;
+    color: #283136;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+
+.aside {
+  width: 360px;
+  /* временно*/
+  min-height: 525px;
+}
+
+
+.partners-list{
+display: flex;
+list-style: none;
+}
+
+.partners-list-item
+{
+  margin: 0px;
+  margin-right: 96px;
+  /*border-right: 2px solid #000000;*/
+}
+
+
+.contacts-content {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.13;
+  text-align: left;
+  color: #666666;
+}
+
+.contacts-content a {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.13;
+  text-align: left;
+  color: #666666;
+}
+
+.footer .container {
+  display: flex;
+  width: 1440px;
+  height: 217px;
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
+  padding: 69px 167px;
+}
+
+.footer-social {
+  display: flex;
+  width: 261px;
+  height: 79px;
+  margin: 0;
+}
+
+.footer-text {
+  justify-self: center;
+  width: 545px;
+  height: 79px;
+  margin: 0;
+}
+
+
+.inner-page .page-title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+
+  /* Временно для сетки */
+  min-height: 42px;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 261px;
+  padding: 0;
+  margin: 0;
+
+}
+
+.filters-fieldset {
+  border: none;
+}
+
+.fieldset-title
+{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.filters ul{
+  list-style: none;
+  line-height: 19px;
+}
+
+.filters label {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--charcoal-grey);
+}
+
+.filters label:hover,
+.filters label:focus {
+color: #283136;
+}
+
+/* Пока не разобрался
+.filter ;abel:disabled label {
+opacity: 0.3;
+color: #283136;
+}
+*/
+
+.catalog {
+  width: 760x;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-product-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.catalog-product-list-item {
+  width: 360px;
+  margin: 0;
+  margin-right: 40px;
+  margin-bottom: 33px;
+  border: 1px solid rgba(77,77,77,0.10);
+  box-shadow: 0 6px 15px 0 rgba(0,1,1,0.25);
+}
+
+.catalog-product-list-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.catalog-item a {
+font-size: 16px;
+color: #FFFFFF;
+text-align: center;
+line-height: 18px;
+background-color: #FB565A;
+text-align: center;
+
+}
+
+.catalog-item h3 {
+  width: 71px;
+  height: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+
+.catalog-item p {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: center;
+  color: #666666;
+}
+
+
+.catalog-pagination {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-pagination a {
+font-size: 16px;
+color: #000000;
+text-align: center;
+line-height: 18px;
+background-color: #EEEEEE;
+text-transform: uppercase;
+}
+
+.catalog-pagination a:hover {
+background: #DFDFDF;
+}
+
+.catalog-pagination a:active {
+  background: #D5D5D5;
+  }
+
+  .current a {
+  background: rgba(0,0,0,0.00);
+  border: 3px solid #DBDBDB;
+  }
+
+.form-feedback {
+  display: none;
+}
+/* Образец стилизации попапа
+
+.appointment-item input {
+  font: inherit;
+
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.appointment-item input:focus {
+  border-color: #663d15;
+}
+
+
+.modal {
+  color: #000000;
+
+  background-color: #f8f3f0;
+  background-image: url("img/pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.modal h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+}
+
+.login-form input:focus {
+  border-color: #663d15;
+}
+
+.login-checkbox:hover,
+.login-checkbox:focus {
+  color: #663d15;
+}
+
+.restore {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.restore:hover,
+.restore:focus {
+  text-decoration: none;
+}
+
+*/
+
+.footer-list {
+  list-style: none;
+}
+
+.footer-text {
+  text-align: center;
+   }
+
+.footer b {
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+   }
+
+.footer span {
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+   }
+
+
+
