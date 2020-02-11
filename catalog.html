@@ -8,13 +8,13 @@
   </head>
   <body class="inner-page">
 
-    <header class="header">
+    <header class="header-inner">
      <div class="container">
       <nav class="navigation">
-        <a><img class="header-logo" src="img/nerds-logo.svg" width="100" height="100" alt="Логотип дизайн-студии Nerds">
+        <a href="index.html"><img class="header-logo" src="img/nerds-logo.svg" width="100" height="100" alt="Логотип дизайн-студии Nerds">
         </a>
         <ul class="navigation-menu">
-          <li class="navigation-menu-item"><a href="studio.html">Информация</a></li>
+          <li class="navigation-menu-item"><a href="studio.html">Студия</a></li>
           <li class="navigation-menu-item"><a href="clients.html">Клиенты</a></li>
           <li class="navigation-menu-item navigation-current-item"><a href="catalog.html">Магазин</a></li>
           <li class="navigation-menu-item"><a href="contacts.html">Контакты</a></li>
@@ -23,18 +23,19 @@
           <li class="basket"><a href="#">Корзина</a></li>
         </ul>
       </nav>
+      <h1 class="page-title">Магазин готовых шаблонов</h1>
      </div>
     </header>
 
-    <main class="container">
+ <main class="container">
 
-      <h1 class="page-title">Магазин готовых шаблонов</h1>
-
-     <div class="catalog-columns">
+ <div class="catalog-columns">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
          <form class="filters-form" action="/nerds" method="post">
-          <div class="filters-form-value">
+          <fieldset class="filters-fieldset">
+            <legend class="fieldset-title">Стоимость:</legend>
+            <div class="filters-form-value">
             <input type="range" min="1" max="15000">
             <label>
               от
@@ -46,6 +47,8 @@
             </label>
           </div>
         </fieldset>
+
+
 
         <fieldset class="filters-fieldset">
           <legend class="fieldset-title">Сетка</legend>
@@ -68,9 +71,9 @@
               </label>
               </li>
             </ul>
-          </fieldset>
+        </fieldset>
 
-           <fieldset class="filters-fieldset">
+        <fieldset class="filters-fieldset">
              <legend class="fieldset-title">Особенности</legend>
              <ul>
                <li>
@@ -104,11 +107,12 @@
              </label>
             </li>
           </ul>
-        </div>
-      </fieldset>
-        <button class="form-button" type="submit">Показать</button>
-        </form>
-      </section>
+       </fieldset>
+
+             <button class="form-button" type="submit">Показать</button>
+          </form>
+        </section>
+
 
       <section class="catalog">
         <h2 class="visually-hidden">Каталог</h2>
@@ -169,7 +173,7 @@
                  <p>Лендинг курсов повышения квалификации</p>
                  <a class="hover-btn" href="#">9900 руб.</a>
               </div>
-          </div>
+            </div>
           </li>
           <li class="catalog-product-list-item">
             <div class="catalog-item item-kvast">
@@ -179,9 +183,10 @@
                 <p>Промо-сайт производителя крафтового кваса</p>
                 <a class="hover-btn" href="#">9900 руб.</a>
               </div>
-          </div>
+            </div>
           </li>
         </ul>
+
           <ul class="catalog-pagination">
             <li class="catalog-pagination-item current"><a>1</a></li>
             <li class="catalog-pagination-item"><a href="#">2</a></li>
@@ -189,7 +194,11 @@
             <li class="catalog-pagination-item next"><a href="#">Следующая</a></li>
           </ul>
       </section>
+
     </div>
+
+  </main>
+
 
       <section class="contacts">
         <div class="container">
@@ -208,46 +217,47 @@
         </div>
       </section>
 
-        </main>
 
-        <footer class="footer">
-          <div class="container">
-            <div class="footer-social clearfix">
-              <ul class="footer-list">
-                 <li> <a class="footer-social-vkontakte social-btn" href="#">Вконтакте</a></li>
-                 <li> <a class="footer-social-facebook social-btn" href="#">Фейсбук</a></li>
-                 <li> <a class="footer-social-instagram social-btn" href="#">Инстаграм</a></li>
-            </ul>
-            </div>
-             <div class="footer-text">
-                <b class="footer-tagline">Давайте дружить, это выгодно!</b>
-                <br>
-               <span class="footer-sale">Скидка 10% для друзей из социальных сетей.</span>
-            </div>
-         </div>
-        </footer>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-social clearfix">
+            <ul class="footer-list">
+               <li> <a class="footer-social-vkontakte social-btn" href="#">Вконтакте</a></li>
+               <li> <a class="footer-social-facebook social-btn" href="#">Фейсбук</a></li>
+               <li> <a class="footer-social-instagram social-btn" href="#">Инстаграм</a></li>
+          </ul>
+          </div>
+           <div class="footer-text">
+              <b class="footer-tagline">Давайте дружить, это выгодно!</b>
+              <br>
+             <span class="footer-sale">Скидка 10% для друзей из социальных сетей.</span>
+          </div>
+       </div>
+      </footer>
 
-    <section class="form-feedback">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-        <div class="feedback-form">
-          <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="feedback-form-title">Напишите нам</p>
-            <label>
-                Ваше имя:
-                <input type="text" name="Name" placeholder="Имя Фамилия">
-             </label>
+      <section class="form-feedback">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+          <div class="feedback-form">
+            <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="feedback-form-title">Напишите нам</p>
+            <a href="#" class="feedback-form-closebtn">Закрыть окно</a>
               <label>
-                Ваш e-mail:
-              <input type="text" name="email" placeholder="email@exemple.com">
-            </label>
-            <label>
-              Текст письма:
-              <textarea name="comment" rows="10">В свободной форме</textarea>
-            </label>
-            <button class="feedback-form-button" type="submit">Отправить</button>
-          </form>
-         </div>
+                  Ваше имя:
+                  <input type="text" name="Name" placeholder="Имя Фамилия">
+               </label>
+                <label>
+                  Ваш e-mail:
+                <input type="text" name="email" placeholder="email@exemple.com">
+              </label>
+              <label>
+                  Текст письма:
+                <textarea name="comment" rows="10" placeholder="В свободной форме"></textarea>
+              </label>
+              <button class="feedback-form-button" type="submit">Отправить</button>
+            </form>
+          </div>
        </section>
+
 
   </body>
 </html>
