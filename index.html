@@ -56,41 +56,43 @@
      </div>
     </header>
 
-
       <main class="container">
       <section class="features">
         <H2 class="visually-hidden">Список услуг</H2>
         <div class="container">
-        <ul class="features-list clearfix">
+        <ul class="features-list">
           <li class="feature-item">
             <img src="img/advantage-picture-red.png" width="300" height="146" alt="Веб-сайты">
             <h3 class="feature-title">Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-            <a class="feature-button btn-red" href="#">Заказать</a>
+            <a class="button btn-red" href="#">Заказать</a>
           </li>
           <li class="feature-item">
             <img src="img/advantage-picture-green.png" width="300" height="146" alt="Приложения">
             <h3 class="feature-title">Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="feature-button btn-green" href="#">Заказать</a>
+            <a class="button btn-green" href="#">Заказать</a>
           </li>
           <li class="feature-item">
             <img src="img/advantage-picture-yellow.png" width="300" height="146" alt="веб-сайты">
             <h3 class="feature-title">Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="feature-button btn-yellow" href="#">Заказать</a>
+            <a class="button btn-yellow" href="#">Заказать</a>
           </li>
         </ul>
       </div>
        </section>
 
+       <div class="big-divider">
+       </div>
+
        <section class="content">
        <div class="content-column">
                <div class="description">
                 <h2 class="visually-hidden">О нас</h2>
-                 <p class="content-tagline">Мы маленькая, но гордая дизайн-студия из Краснодара</p>
+                 <p class="content-tagline">Мы маленькая, но гордая дизайн-студия из Краснодара.</p>
                  <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
-                 <p class="description-order">Выполняем заказы на разработку</p>
+                 <p class="description-order">Выполняем заказы на разработку:</p>
                     <uL class="content-list">
                        <li class="content-list-item">Веб-сайтов любой сложности</li>
                        <li class="content-list-item">Мобильных приложений для IOS и Android</li>
@@ -99,8 +101,11 @@
                </div>
                <div class="aside">
                 <h2 class="visually-hidden">Наши достижения</h2>
-                    <img class="aside-picture" src="img/nerds-picture.png" width="360" height="208" alt="Логотип">
-                    <table class="aside-table">
+
+                      <img class="aside-picture" src="img/nerds-picture.png" width="360" height="208" alt="Логотип">
+
+                    <div class="aside-table">
+                    <table >
                     <caption class="sidebar-table-caption">C 2004 года любим точность во всем:</caption>
                     <tr class="aside-table-row1">
                       <td>146<sup>%</sup></td>
@@ -113,12 +118,16 @@
                       <td>Минимальная предоплата</td>
                     </tr>
                     </table>
+                  </div>
                 </div>
       </div>
      </section>
 
+     <div class="big-divider">
+    </div>
+
+
      <section class="partners">
-       <div class="container">
         <h2 class="visually-hidden">Наши партнеры</h2>
         <ul class="partners-list clearfix">
           <li class="partners-list-item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy-logo.png" width="199" height="68" alt="HTMLAcademy"></a></li>
@@ -126,13 +135,14 @@
           <li class="partners-list-item"><a href=""><img src="img/pink-logo.png" width="185" height="52" alt="Pink"></a></li>
           <li class="partners-list-item"><a href=""><img src="img/mishka-logo.png" width="173" height="84" alt="Mishka"></a></li>
         </ul>
-       </div>
      </section>
+
+     <div class="big-divider">
+    </div>
 
     </main>
 
       <section class="contacts">
-        <div class="container">
            <h2 class="visually-hidden">Контакты</h2>
            <div class="map">
              <img class="map" src="img/map.png" width="1440" height="416" alt="Офис нашй студии по адресу: Санкт-Петербург, ул. Конюшенная, д. 19/8">
@@ -142,18 +152,17 @@
              <p>191186, Санкт-Петербург,<br>
              ул. Конюшенная, д. 19/8</p>
              <a href="tel:+78122757575">тел. +7(812)275-75-75</a>
-             <a href="#">Напишите нам</a>
+             <a class="button contacts-btn" href="#">Напишите нам</a>
            </div>
-         </div>
          </section>
 
     <footer class="footer">
       <div class="container">
-        <div class="footer-social clearfix">
+        <div class="footer-social">
           <ul class="footer-list">
-             <li> <a class="footer-social-vkontakte social-btn" href="#">Вконтакте</a></li>
-             <li> <a class="footer-social-facebook social-btn" href="#">Фейсбук</a></li>
-             <li> <a class="footer-social-instagram social-btn" href="#">Инстаграм</a></li>
+             <li> <a class="social-vkontakte-btn social-btn" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+             <li> <a class="social-facebook-btn social-btn" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+             <li> <a class="social-instagram-btn social-btn" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
         </div>
          <div class="footer-text">
@@ -166,25 +175,27 @@
 
     <section class="form-feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-        <div class="feedback-form">
           <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="feedback-form-title">Напишите нам</p>
           <a href="#" class="feedback-form-closebtn">Закрыть окно</a>
-            <label>
+          <p class="form-item">
+          <label>
                 Ваше имя:
                 <input type="text" name="Name" placeholder="Имя Фамилия">
              </label>
+             </p>
+             <p class="form-item">
               <label>
                 Ваш e-mail:
               <input type="text" name="email" placeholder="email@exemple.com">
             </label>
+          </p>
             <label>
                 Текст письма:
               <textarea name="comment" rows="10" placeholder="В свободной форме"></textarea>
             </label>
-            <button class="feedback-form-button" type="submit">Отправить</button>
+            <button class="button feedback-form-button" type="submit">Отправить</button>
           </form>
-        </div>
      </section>
 
   </body>
