@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -28,28 +29,30 @@
       <div class="slider">
        <div class="container">
          <div class="slider-1">
-           <b class="slider-tagline">Долго,дорого, скрупулезно.</b>
-           <p class="slider-text">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-           <a class="slider-button" href="#">Узнать больше</a>
-           <img class="slider-picture" src="img/slide1.png" width="698" height="413" alt="Картинка первого слайдера">
-         </div>
+             <h3 class="slider-tagline">Долго, дорого,<br>скрупулезно.</h3>
+             <p class="slider-text">Математически выверенный дизайн <br>для вашего сайта или мобильного приложения</p>
+               <div class="slider-nav">
+                 <a class="button slider-button" href="#"><span>Узнать больше</span></a>
+                 <ul class="slider-indicator">
+                  <li class="slider-indicator-page">1</li>
+                  <li class="slider-indicator-page">2</li>
+                  <li class="slider-indicator-page">3</li>
+                </ul>
+              </div>
+            </div>
          <div class="slider-2">
           <b class="slider-tagline">Любим математику как никто другой</b>
           <p class="slider-text">Никакого креатива, только математические формулы для расчета идельных пропорций</p>
-          <a class="slider-button" href="#">Узнать больше</a>
+          <a class="button slider-button" href="#"><span>Узнать больше</span></a>
           <img class="slider-picture" src="img/slide2.png" width="663" height="440" alt="Картинка второго слайдера">
         </div>
         <div class="slider-3">
           <b class="slider-tagline">Только ночь, только хардкор</b>
           <p class="slider-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается</p>
-          <a class="slider-button" href="#">Узнать больше</a>
+          <a class="button slider-button" href="#"><span>Узнать больше</span></a>
           <img class="slider-picture" src="img/slide3.png" width="759" height="411" alt="Картинка третьего слайдера">
         </div>
-        <ul class="slider-indicator">
-          <li class="slider-indicator-page">1</li>
-          <li class="slider-indicator-page">2</li>
-          <li class="slider-indicator-page">3</li>
-        </ul>
+
        </div>
       </div>
 
@@ -65,26 +68,24 @@
             <img src="img/advantage-picture-red.png" width="300" height="146" alt="Веб-сайты">
             <h3 class="feature-title">Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-            <a class="button btn-red" href="#">Заказать</a>
+            <a class="button btn-red" href="#"><span>Заказать</span></a>
           </li>
           <li class="feature-item">
             <img src="img/advantage-picture-green.png" width="300" height="146" alt="Приложения">
             <h3 class="feature-title">Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="button btn-green" href="#">Заказать</a>
+            <a class="button btn-green" href="#"><span>Заказать</span></a>
           </li>
           <li class="feature-item">
             <img src="img/advantage-picture-yellow.png" width="300" height="146" alt="веб-сайты">
             <h3 class="feature-title">Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="button btn-yellow" href="#">Заказать</a>
+            <a class="button btn-yellow" href="#"><span>Заказать</span></a>
           </li>
         </ul>
       </div>
        </section>
 
-       <div class="big-divider">
-       </div>
 
        <section class="content">
        <div class="content-column">
@@ -123,46 +124,40 @@
       </div>
      </section>
 
-     <div class="big-divider">
-    </div>
-
-
      <section class="partners">
         <h2 class="visually-hidden">Наши партнеры</h2>
-        <ul class="partners-list clearfix">
+        <ul class="partners-list">
           <li class="partners-list-item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy-logo.png" width="199" height="68" alt="HTMLAcademy"></a></li>
-          <li class="partners-list-item"><a href=""><img src="img/borodinski-logo.png" width="209" height="90" alt="Borodinski"></a></li>
-          <li class="partners-list-item"><a href=""><img src="img/pink-logo.png" width="185" height="52" alt="Pink"></a></li>
-          <li class="partners-list-item"><a href=""><img src="img/mishka-logo.png" width="173" height="84" alt="Mishka"></a></li>
+          <li class="partners-list-item"><a href="#"><img src="img/borodinski-logo.png" width="209" height="90" alt="Borodinski"></a></li>
+          <li class="partners-list-item"><a href="#"><img src="img/pink-logo.png" width="185" height="52" alt="Pink"></a></li>
+          <li class="partners-list-item"><a href="#"><img src="img/mishka-logo.png" width="173" height="84" alt="Mishka"></a></li>
         </ul>
      </section>
-
-     <div class="big-divider">
-    </div>
 
     </main>
 
       <section class="contacts">
            <h2 class="visually-hidden">Контакты</h2>
-           <div class="map">
-             <img class="map" src="img/map.png" width="1440" height="416" alt="Офис нашй студии по адресу: Санкт-Петербург, ул. Конюшенная, д. 19/8">
-           </div>
-           <div class="contacts-content">
-             <p class="contacts-content-name">Nёrds design studio</p>
-             <p>191186, Санкт-Петербург,<br>
-             ул. Конюшенная, д. 19/8</p>
-             <a href="tel:+78122757575">тел. +7(812)275-75-75</a>
-             <a class="button contacts-btn" href="#">Напишите нам</a>
-           </div>
-         </section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002806!2d30.320858715677204!3d59.93871916905467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1582635030969!5m2!1sru!2sru" width="1440" height="416" style="border:0;" allowfullscreen=""></iframe>
+               <div class="map">
+                <img src="img/map.png" width="1440" height="416" alt="Офис нашй студии по адресу: Санкт-Петербург, ул. Конюшенная, д. 19/8">
+              </div>
+                <div class="contacts-content">
+                   <p class="contacts-content-name">Nёrds design studio</p>
+                   <p>191186, Санкт-Петербург,<br>
+                   ул. Конюшенная, д. 19/8</p>
+                   <a href="tel:+78122757575">тел. +7(812)275-75-75</a>
+                 <a class="button contacts-btn" href="#">Напишите нам</a>
+               </div>
+        </section>
 
     <footer class="footer">
       <div class="container">
         <div class="footer-social">
           <ul class="footer-list">
-             <li> <a class="social-vkontakte-btn social-btn" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
-             <li> <a class="social-facebook-btn social-btn" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-             <li> <a class="social-instagram-btn social-btn" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+             <li class="social-btn"><a class="social-vkontakte-btn" href=""><span class="visually-hidden">Вконтакте</span></a></li>
+             <li class="social-btn"><a class="social-facebook-btn" href=""><span class="visually-hidden">Фейсбук</span></a></li>
+             <li class="social-btn"><a class="social-instagram-btn" href=""><span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
         </div>
          <div class="footer-text">
@@ -173,30 +168,32 @@
      </div>
     </footer>
 
-    <section class="form-feedback">
+    <section class="modal form-feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-          <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="feedback-form-title">Напишите нам</p>
-          <a href="#" class="feedback-form-closebtn">Закрыть окно</a>
-          <p class="form-item">
-          <label>
+           <p class="feedback-form-title">Напишите нам</p>
+           <input class="closebtn" type="image" src="img/close-cross.svg" alt="Закрыть" width="20" height="20"/>
+           <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="on">
+           <p class="form-item">
+               <label>
                 Ваше имя:
                 <input type="text" name="Name" placeholder="Имя Фамилия">
-             </label>
+               </label>
              </p>
              <p class="form-item">
-              <label>
+                <label>
                 Ваш e-mail:
-              <input type="text" name="email" placeholder="email@exemple.com">
-            </label>
-          </p>
-            <label>
+              <input type="email" name="email" placeholder="email@exemple.com">
+               </label>
+            </p>
+               <label>
                 Текст письма:
-              <textarea name="comment" rows="10" placeholder="В свободной форме"></textarea>
-            </label>
+               <textarea name="comment" rows="10" placeholder="В свободной форме"></textarea>
+              </label>
             <button class="button feedback-form-button" type="submit">Отправить</button>
           </form>
      </section>
+
+     <script src="js/modal.js"></script>
 
   </body>
 </html>

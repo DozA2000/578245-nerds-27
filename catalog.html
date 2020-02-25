@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -81,54 +82,58 @@
                 Слайдер
                  </label>
                </li>
-             <li  class="filter-option">
 
+             <li  class="filter-option">
              <input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="features" id="filter-features">
              <label for="filter-features"> Блок преимуществ
              </label>
             </li >
-            <li class="filter-option">
 
+            <li class="filter-option">
              <input class="visually-hidden filter-input filters-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
              <label for="filter-news">Новости
              </label>
             </li>
-            <li class="filter-option">
 
+            <li class="filter-option">
              <input class="visually-hidden filter-input filters-input-checkbox" type="checkbox" name="gallery" id="filter-gallary">
               <label for="filter-gallary">Галерея
              </label>
             </li>
+
             <li class="filter-option">
               <input class="visually-hidden filter-input filters-input-checkbox" type="checkbox" name="basket" id="filter-basket">
              <label for="filter-basket"> Корзина
              </label>
             </li>
+
           </ul>
        </fieldset>
 
-             <button class="filter-button button" type="submit">Показать</button>
+             <button class="filter-button button" type="submit"><span>Показать</span></button>
           </form>
         </section>
 
 
       <section class="catalog">
         <h2 class="visually-hidden">Каталог</h2>
-        <p class="catalog-sorting-title">Сортировать</p>
-        <ul class="catalog-sorting-list">
-          <li class="catalog-sorting-list-item"><a href="#">По цене</a></li>
-          <li class="catalog-sorting-list-item"><a href="#">По типу</a></li>
-          <li class="catalog-sorting-list-item"><a href="#">По названию</a></li>
-          <li class="catalog-sorting-list-item"><a href="#">По убыванию</a></li>
-          <li class="catalog-sorting-list-item"><a href="#">По возрастанию</a></li>
-        </ul>
+         <div class="catalog-sorting">
+            <p class="catalog-sorting-title">Сортировать</p>
+            <ul class="catalog-sorting-list">
+               <li class="catalog-sorting-list-item sorting-list-current-item"><a>По цене</a></li>
+               <li class="catalog-sorting-list-item"><a href="#">По типу</a></li>
+               <li class="catalog-sorting-list-item"><a href="#">По названию</a></li>
+               <li class="catalog-sorting-list-item catalog-sorting-list-item-down"><a href="#"></a></li>
+               <li class="catalog-sorting-list-item catalog-sorting-list-item-up"><a href="#"></a></li>
+            </ul>
+          </div>
         <ul class="catalog-product-list">
           <li class="catalog-product-list-item">
             <div class="catalog-item item-sedona">
               <div class="item-browser"><img src="img/browser.svg" width="360" height="40" alt="Браузер"></div>
             <img src="img/img-sedona.jpg" width="360" height="576" alt="шаблон Sedona">
                <div class="item-hover item-sedona-hover">
-                <p class=hover-title>Sedona</p>
+                <p class=hover-title><a href="#">Sedona</a></p>
                 <p class="hover-description">Информационный сайт <br>для туристов</p>
                 <a class="button hover-btn" href="#">9 900 руб.</a>
               </div>
@@ -139,7 +144,7 @@
               <div class="item-browser"><img src="img/browser.svg" width="360" height="40" alt="Браузер"></div>
             <img src="img/img-pink.jpg" width="360" height="576" alt="шаблон Pink">
                <div class="item-hover item-pink-hover">
-                 <p class=hover-title>Pink app</p>
+                 <p class=hover-title><a href="#">Pink app</a></p>
                  <p class="hover-description">Продуктовый лэндинг <br> приложения для IOS и Android</p>
                  <a class="button hover-btn" href="#">9 900 руб.</a>
              </div>
@@ -150,7 +155,7 @@
               <div class="item-browser"><img src="img/browser.svg" width="360" height="40" alt="Браузер"></div>
             <img src="img/img-barbershop.jpg" width="360" height="576" alt="шаблон Borodinski">
                <div class="item-hover item-barbershop-hover">
-                  <p class=hover-title>Barbershop</p>
+                  <p class=hover-title><a href="#">Barbershop</a></p>
                   <p class="hover-description">Сайт салона красоты. <br> Для мужчин, да.</p>
                   <a class="button hover-btn" href="#">9 900 руб.</a>
                </div>
@@ -161,7 +166,7 @@
             <div class="item-browser"><img src="img/browser.svg" width="360" height="40" alt="Браузер"></div>
             <img src="img/img-mishka.jpg" width="360" height="576" alt="шаблон Mishka">
               <div class="item-hover item-mishka-hover">
-                 <p class=hover-title>Mishka</p>
+                 <p class=hover-title><a href="#">Mishka</a></p>
                 <p class="hover-description">Интернет-магазин <br>  вязанных игрушек</p>
                 <a class="button hover-btn" href="#">9 900 руб.</a>
               </div>
@@ -172,8 +177,8 @@
               <div class="item-browser"><img src="img/browser.svg" width="360" height="40" alt="Браузер"></div>
             <img src="img/img-aplus.jpg" width="360" height="576" alt="шаблон Aplus">
               <div class="item-hover item-aplus-hover">
-                 <p class=hover-title>A plus</h3>
-                 <p class="hover-description"> Лендинг курсов повышения <br>  квалификации</p>
+                 <p class=hover-title><a href="#">A plus</a></p>
+                 <p class="hover-description">Лендинг курсов повышения<br>квалификации</p>
                  <a class="button hover-btn" href="#">9 900 руб.</a>
               </div>
             </div>
@@ -183,8 +188,8 @@
               <div class="item-browser"><img src="img/browser.svg" width="360" height="40" alt="Браузер"></div>
             <img src="img/img-kvast.jpg" width="360" height="576" alt="шаблон Кваст">
               <div class="item-hover item-kvast-hover">
-                <p class=hover-title>Kvast</h3>
-                <p class="hover-description">Промо-сайт производителя <br>  крафтового кваса</p>
+                <p class=hover-title><a href="#">Kvast</a></p>
+                <p class="hover-description">Промо-сайт производителя<br>крафтового кваса</p>
                 <a class="button hover-btn" href="#">9 900 руб.</a>
               </div>
             </div>
@@ -192,10 +197,10 @@
         </ul>
 
           <ul class="catalog-pagination">
-            <li class="catalog-pagination-item current"><a>1</a></li>
-            <li class="catalog-pagination-item"><a href="#">2</a></li>
-            <li class="catalog-pagination-item"><a href="#">3</a></li>
-            <li class="catalog-pagination-item button next"><a href="#">Следующая</a></li>
+            <li class="pagination-item pagination-item-current"><a>1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
           </ul>
       </section>
 
@@ -218,47 +223,47 @@
     </div>
   </section>
 
-      <footer class="footer">
-        <div class="container">
-          <div class="footer-social">
-            <ul class="footer-list">
-               <li> <a class="social-vkontakte-btn social-btn" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
-               <li> <a class="social-facebook-btn social-btn" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-               <li> <a class="social-instagram-btn social-btn" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
-          </ul>
-          </div>
-           <div class="footer-text">
-              <b class="footer-tagline">Давайте дружить, это выгодно!</b>
-              <br>
-             <span class="footer-sale">Скидка 10% для друзей из социальных сетей.</span>
-          </div>
-       </div>
-      </footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-social">
+        <ul class="footer-list">
+           <li class="social-btn"><a class="social-vkontakte-btn" href=""><span class="visually-hidden">Вконтакте</span></a></li>
+           <li class="social-btn"><a class="social-facebook-btn" href=""><span class="visually-hidden">Фейсбук</span></a></li>
+           <li class="social-btn"><a class="social-instagram-btn" href=""><span class="visually-hidden">Инстаграм</span></a></li>
+      </ul>
+      </div>
+       <div class="footer-text">
+          <b class="footer-tagline">Давайте дружить, это выгодно!</b>
+          <br>
+         <span class="footer-sale">Скидка 10% для друзей из социальных сетей.</span>
+      </div>
+   </div>
+  </footer>
 
-      <section class="form-feedback">
-        <h2 class="visually-hidden">Форма обратной связи</h2>
-            <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="feedback-form-title">Напишите нам</p>
-            <a href="#" class="feedback-form-closebtn">Закрыть окно</a>
-            <p class="form-item">
-            <label>
-                  Ваше имя:
-                  <input type="text" name="Name" placeholder="Имя Фамилия">
-               </label>
-               </p>
-               <p class="form-item">
-                <label>
-                  Ваш e-mail:
-                <input type="text" name="email" placeholder="email@exemple.com">
-              </label>
-            </p>
+  <section class="form-feedback">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+         <p class="feedback-form-title">Напишите нам</p>
+         <input class="closebtn" type="image" src="img/close-cross.svg" alt="Закрыть" width="20" height="20"/>
+         <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="on">
+         <p class="form-item">
+             <label>
+              Ваше имя:
+              <input type="text" name="Name" placeholder="Имя Фамилия">
+             </label>
+           </p>
+           <p class="form-item">
               <label>
-                  Текст письма:
-                <textarea name="comment" rows="10" placeholder="В свободной форме"></textarea>
-              </label>
-              <button class="button feedback-form-button" type="submit">Отправить</button>
-            </form>
-       </section>
+              Ваш e-mail:
+            <input type="email" name="email" placeholder="email@exemple.com">
+             </label>
+          </p>
+             <label>
+              Текст письма:
+             <textarea name="comment" rows="10" placeholder="В свободной форме"></textarea>
+            </label>
+          <button class="button feedback-form-button" type="submit">Отправить</button>
+        </form>
+   </section>
 
   </body>
 </html>
