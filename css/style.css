@@ -177,20 +177,79 @@ div,section,a,ul,li,p,footer,header {
 border-bottom: 2px solid #fb565a;
 }
 
-.slider {
-  /*  display: none;  */
-}
-
-.slider-2,
-.slider-3 {
+.slider input[type="radio"]{
   display: none;
 }
 
-.slider-1 {
+.slider {
+  position: relative;
+
+}
+
+.slider-controls {
+  position: absolute;
+  top: 310px;
+  left: 50%;
+}
+
+.slider-controls label {
+  display: inline-block;
+  margin: 0 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+
+
+
+  background-image: url("../img/active-button.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.slide-1,
+.slide-2,
+.slide-3 {
+  display: none;
+}
+
+.slide-1 {
   margin-top: 40px;
   min-height: 411px;
   background: url(../img/slide1.png) no-repeat;
   background-position: right;
+}
+
+.slide-2 {
+  margin-top: 40px;
+  min-height: 411px;
+  background: url(../img/slide2.png) no-repeat;
+  background-position: right;
+}
+
+.slide-3 {
+  margin-top: 40px;
+  min-height: 411px;
+  background: url(../img/slide3.png) no-repeat;
+  background-position: right;
+}
+
+#btn-1:checked ~ .slider-inner .slider-slides .slide-1{
+  display: block;
+}
+
+#btn-2:checked ~ .slider-inner .slider-slides .slide-2{
+  display: block;
+}
+
+#btn-3:checked ~ .slider-inner .slider-slides .slide-3{
+  display: block;
 }
 
 .slider-tagline {
@@ -212,10 +271,6 @@ letter-spacing: 0;
 line-height: 24px;
 }
 
-.slider-nav {
-  display: flex;
-}
-
 .slider-button {
 
   margin-top: 55px;
@@ -234,13 +289,6 @@ line-height: 24px;
 
 .slider-button:active span{
   opacity: 0.3;
-}
-
-.slider-indicator {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .features-list {
@@ -1414,9 +1462,13 @@ background: #DFDFDF;
 }
 
 .closebtn {
-  position: relative;
-  margin-left: 420px;
+  position: absolute;
+  top: 80px;
+  right: 100px;
+  padding: 0;
   opacity: 0.3;
+  border: none;
+  background-color: transparent;
 }
 
 .closebtn:hover {
@@ -1454,7 +1506,6 @@ background: #DFDFDF;
   padding-right: 15px;
   padding-bottom: 7px;
 
-  opacity: 0.5;
 
   font-family: Roboto;
   font-size: 16px;
