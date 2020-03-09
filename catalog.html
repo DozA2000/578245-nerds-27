@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/modal.js"></script>
   </head>
   <body class="inner-page">
 
@@ -53,8 +54,8 @@
             </div>
           </fieldset>
 
-        <fieldset class="filters-fieldset">
-          <legend class="fieldset-title">Сетка</legend>
+        <fieldset class="filters-fieldset filters-group">
+          <legend class="fieldset-title ">Сетка</legend>
              <ul>
               <li class="filter-option">
                 <input class="visually-hidden filters-input filters-input-radio" type="radio" name="radiobtn" value="adaptive" id="filter-adaptive" checked>
@@ -73,7 +74,7 @@
             </ul>
         </fieldset>
 
-        <fieldset class="filters-fieldset">
+        <fieldset class="filters-fieldset filters-group">
              <legend class="fieldset-title">Особенности</legend>
              <ul>
                <li class="filter-option">
@@ -211,17 +212,18 @@
 
   <section class="contacts">
     <h2 class="visually-hidden">Контакты</h2>
-    <div class="map">
-      <img class="map" src="img/map.png" width="1440" height="416" alt="Офис нашй студии по адресу: Санкт-Петербург, ул. Конюшенная, д. 19/8">
-    </div>
-    <div class="contacts-content">
-      <p class="contacts-content-name">Nёrds design studio</p>
-      <p>191186, Санкт-Петербург,<br>
-      ул. Конюшенная, д. 19/8</p>
-      <a href="tel:+78122757575">тел. +7(812)275-75-75</a>
-      <a class="button contacts-btn" href="#">Напишите нам</a>
-    </div>
-  </section>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002806!2d30.320858715677204!3d59.93871916905467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1582635030969!5m2!1sru!2sru" width="1440" height="416" style="border:0;" allowfullscreen=""></iframe>
+        <div class="map">
+         <img src="img/map.png" width="1440" height="416" alt="Офис нашй студии по адресу: Санкт-Петербург, ул. Конюшенная, д. 19/8">
+       </div>
+         <div class="contacts-content">
+            <p class="contacts-content-name">Nёrds design studio</p>
+            <p class="contacts-content-adress">191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8</p>
+            <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          <a class="button contacts-btn" href="#">Напишите нам</a>
+        </div>
+ </section>
 
   <footer class="footer">
     <div class="container">
@@ -240,10 +242,10 @@
    </div>
   </footer>
 
-  <section class="form-feedback">
+  <section class="modal form-feedback">
     <h2 class="visually-hidden">Форма обратной связи</h2>
          <p class="feedback-form-title">Напишите нам</p>
-         <input class="closebtn" type="image" src="img/close-cross.svg" alt="Закрыть" width="20" height="20"/>
+         <button class="closebtn"><img src="img/close-cross.svg" alt="Закрыть"><span class="visually-hidden">Закрыть</span></button>
          <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="on">
          <p class="form-item">
              <label>
@@ -264,6 +266,8 @@
           <button class="button feedback-form-button" type="submit">Отправить</button>
         </form>
    </section>
+
+   <script src="js/modal.js"></script>
 
   </body>
 </html>

@@ -19,10 +19,13 @@ a {
   line-height: 1.13;
 }
 
+/*
 img {
   max-width: 100%;
   height: auto;
 }
+
+*/
 
 header  {
   min-height: 545px;
@@ -30,6 +33,7 @@ header  {
   margin: 0;
   background-color: #eeeeee;
 }
+
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -49,16 +53,18 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+
 .container {
   width: 1160px;
   padding: 0 0;
   margin: 0 auto;
 }
 
-
+/*
 div,section,a,ul,li,p,footer,header {
   outline: 1px solid blue;
 }
+*/
 
 .button {
   display: inline-block;
@@ -76,6 +82,7 @@ div,section,a,ul,li,p,footer,header {
   text-align: center;
   vertical-align: middle;
   border: none;
+  border-radius: 2px;
 }
 
 .navigation {
@@ -86,9 +93,9 @@ div,section,a,ul,li,p,footer,header {
 
 .header-logo {
   width: 160px;
-  height: 67px;
+  height: 65px;
   justify-self: left;
-  margin-top: 49px;
+  margin-top: 75px;
 }
 
 .header-logo:hover,
@@ -133,8 +140,8 @@ div,section,a,ul,li,p,footer,header {
 
 .basket::before {
   position: absolute;
-  top: 90px;
-  left: 5px;
+  top: 108px;
+  left: 9px;
   content: "";
 
   width: 26px;
@@ -155,7 +162,7 @@ div,section,a,ul,li,p,footer,header {
   line-height: 1.88;
   letter-spacing: normal;
   color: #000000;
-  margin-top: 83px;
+  margin-top: 102px;
 }
 
 .navigation-menu a:hover,
@@ -223,21 +230,21 @@ border-bottom: 2px solid #fb565a;
   margin-top: 40px;
   min-height: 411px;
   background: url(../img/slide1.png) no-repeat;
-  background-position: right;
+  background-position: bottom 24px right 32px;
 }
 
 .slide-2 {
   margin-top: 40px;
   min-height: 411px;
   background: url(../img/slide2.png) no-repeat;
-  background-position: right;
+  background-position: bottom 24px right 32px;
 }
 
 .slide-3 {
   margin-top: 40px;
   min-height: 411px;
   background: url(../img/slide3.png) no-repeat;
-  background-position: right;
+  background-position: bottom 24px right 32px;
 }
 
 #btn-1:checked ~ .slider-inner .slider-slides .slide-1{
@@ -255,7 +262,7 @@ border-bottom: 2px solid #fb565a;
 .slider-tagline {
   display: block;
   margin: 0;
-  padding: 34px 0 24px 0;
+  padding: 40px 0 24px 0;
   font-weight: 500;
   font-size: 55px;
   color: #000000;
@@ -269,11 +276,12 @@ font-size: 16px;
 color: #283136;
 letter-spacing: 0;
 line-height: 24px;
+margin: 0;
 }
 
 .slider-button {
 
-  margin-top: 55px;
+  margin-top: 35px;
   width: 240px;
   height: 50px;
   background-color: #FB565A;
@@ -294,7 +302,7 @@ line-height: 24px;
 .features-list {
   display: flex;
   margin: 0;
-  margin-top: 80px;
+  margin-top: 55px;
   padding: 0;
   list-style: none;
 }
@@ -306,9 +314,13 @@ line-height: 24px;
   }
 
 .feature-title {
+  margin: -1px;
+  margin-top: 18px;
+  padding: 0;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+
 }
 
 .feature-item p {
@@ -316,6 +328,11 @@ line-height: 24px;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
+}
+
+.feature-item .button {
+  margin: 0;
+  margin-top: 15px;
 }
 
 .btn-red {
@@ -376,7 +393,7 @@ line-height: 24px;
   position: absolute;
   content: "";
   left: 0;
-  top: -80px;
+  top: -82px;
 
   width: 1160px;
   height: 2px;
@@ -384,38 +401,36 @@ line-height: 24px;
   }
 
 .content-column {
-  margin-top: 162px;
+  margin-top: 121px;
   position: relative;
   display: flex;
 
 }
 
 .description {
-  width: 650px;
-  margin-right: 149px;
+  margin-right: 113px;
   padding: 40px 0 0 0;
 }
 
-.description p {
-  margin: 0;
-}
-
 .description .content-tagline {
-  width: 650px;
-  height: 87px;
-  margin-bottom: 35px;
+
+  margin: 0;
+  margin-top: -5px;
+  margin-bottom: 23px;
   font-family: Roboto;
   font-size: 45px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: 1;
-  letter-spacing: normal;
   text-align: left;
   color: #000000;
   }
 
   .description p {
+      padding: 0;
+      padding-top: 5px;
+      margin: 0;
       font-size: 16px;
       font-weight: normal;
       font-stretch: normal;
@@ -427,7 +442,7 @@ line-height: 24px;
   }
 
   .description .description-order {
-    margin-top: 47px;
+    margin-top: 35px;
     font-family: Roboto;
     font-weight: 700;
     font-size: 16px;
@@ -439,13 +454,15 @@ line-height: 24px;
 
   .description .content-list {
     margin: 0;
+    padding: 0;
+    padding-left: 35px;
     list-style: none;
   }
 
   .content-list-item {
     position: relative;
     display: block;
-    margin-top: 26px;
+    margin-top: 24px;
 
     font-size: 16px;
     font-weight: normal;
@@ -463,21 +480,28 @@ line-height: 24px;
   left: -35px;
   top: 10px;
 
-    width: 25px;
-    height: 2px;
-    background-color: #fb565a;
+  width: 25px;
+  height: 2px;
+
+  background-color: #fb565a;
   }
 
 
 .aside-picture{
   width: 360px;
   height: 208px;
+  margin: 0;
+  margin-left: 21px;
+  padding: 0;
 }
 
 .aside-table {
   margin: 0;
   padding: 0;
+  border-spacing: 19px 22px;
 }
+
+
 
 .sidebar-table-caption {
   font-family: Roboto;
@@ -494,9 +518,6 @@ line-height: 24px;
 }
 
 .aside-table-row1 {
-  margin-bottom: 100px;
-  height: 80px;
-
   font-family: Roboto;
   font-size: 45px;
   font-weight: bold;
@@ -508,7 +529,6 @@ line-height: 24px;
 }
 
 .aside-table-row1 td {
-  padding-bottom: 20px;
 }
 
 
@@ -523,16 +543,19 @@ line-height: 24px;
   color: #283136;
 }
 
+.aside-table-row2 td {
+}
+
 .partners {
   position: relative;
-  margin: 130px 0 126px 0;
+  margin: 96px 0 116px 0;
 }
 
 .partners::before {
     position: absolute;
     content: "";
     left: 0;
-    top: -60px;
+    top: -49px;
 
     width: 1160px;
     height: 2px;
@@ -543,7 +566,7 @@ line-height: 24px;
   position: absolute;
   content: "";
   left: 0;
-  top: 160px;
+  top: 133px;
 
   width: 1160px;
   height: 2px;
@@ -555,9 +578,10 @@ line-height: 24px;
 .partners-list{
 display: flex;
 flex-wrap: wrap;
-justify-content: space-between;
+justify-content: space-around;
+margin: 0;
 padding: 0;
-padding-left: 45px;
+
 list-style: none;
 }
 
@@ -567,7 +591,6 @@ list-style: none;
 {
   position: relative;
   margin: 0;
-  padding-right: 45px;
 }
 
 .partners-list-item a {
@@ -591,6 +614,11 @@ opacity: 1;
 
 padding-top: 15px;
 }
+
+.partners-list-item:nth-child(4) img {
+
+  padding-top: 5px;
+  }
 
 .partners-list-item:not(:last-child)::after
 {
@@ -639,8 +667,8 @@ padding-top: 15px;
   position: absolute;
   content: "";
 
-  top: 100px;
-  right: 400px;
+  top: 89px;
+  right: 427px;
 
   z-index: 4;
 
@@ -658,12 +686,15 @@ padding-top: 15px;
 .contacts-content {
   position: absolute;
   top: 54px;
-  left: 140px;
+  left: 102px;
   z-index: 3;
   box-sizing: border-box;
+
   width: 319px;
   height: 308px;
+
   padding: 50px;
+
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -674,6 +705,8 @@ padding-top: 15px;
 }
 
 .contacts-content-name {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
@@ -685,15 +718,24 @@ padding-top: 15px;
   text-transform: uppercase;
 }
 
+.contacts-content-adress {
+  margin: 0;
+  margin-top: 24px;
+  padding: 0;
+}
 
 .contacts-content a {
   display: block;
+  margin: 0;
+  margin-top: 17px;
+  padding: 0;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
   line-height: 1.13;
   text-align: left;
   color: #666666;
+letter-spacing: 0.1px;
 }
 
 a.contacts-btn {
@@ -722,7 +764,7 @@ a.contacts-btn {
 }
 
 .footer-social {
-  margin-right: 139px;
+  margin-right: 125px;
 }
 
 .footer-list {
@@ -730,6 +772,7 @@ a.contacts-btn {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
+  margin-top: -9px;
   padding: 0;
   list-style: none;
 }
@@ -797,6 +840,9 @@ a.contacts-btn {
    }
 
 .footer-sale {
+  display: block;
+  margin: 0;
+  margin-top: 10px;
   font-size: 16px;
   line-height: 22px;
   color: #444444;
@@ -808,18 +854,18 @@ a.contacts-btn {
   min-height: 355px;
   padding: 0;
   margin: 0;
-  margin-bottom: 63px;
+  margin-bottom: 86px;
 }
 
 .header-inner .page-title {
   margin: 0;
-  margin-top: 100px;
+  margin-top: 79px;
   font-size: 55px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: 1;
-  letter-spacing: normal;
+  letter-spacing: 0.4px;
   text-align: center;
   color: #000000;
 }
@@ -834,9 +880,12 @@ a.contacts-btn {
   margin: 0;
 }
 
+.range-filter {
+  margin-bottom: 60px;
+}
+
 .filters-fieldset {
   margin: 0;
-  margin-bottom: 62px;
   padding: 0;
 
   border: none;
@@ -848,17 +897,23 @@ a.contacts-btn {
 }
 
 .filters-fieldset legend {
+  margin: 0;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
   font-weight: 700;
 }
 
+.filters-group {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
 .range-controls {
   position: relative;
 
   height: 41px;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
@@ -911,16 +966,20 @@ a.contacts-btn {
 
 .price-controls label {
   display: inline-block;
-  width: 50%;
 
   font-size: 16px;
   text-transform: uppercase;
 }
 
+label.max-price {
+  margin-left: 33px;
+
+}
+
 .price-controls input {
   width: 60px;
   padding: 8px 10px;
-  margin-left: 10px;
+  margin-left: 7px;
 
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
@@ -933,7 +992,8 @@ a.contacts-btn {
 }
 
 .fieldset-title {
-  margin-bottom: 27px;
+  margin-bottom: 19px;
+
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
@@ -943,6 +1003,7 @@ a.contacts-btn {
   list-style: none;
   line-height: 19px;
   margin: 0;
+  margin-top: 20px;
   padding: 0;
 }
 
@@ -965,15 +1026,15 @@ a.contacts-btn {
 
 .filter-option {
   margin-bottom: 19px;
-  padding-left: 45px;
+  padding-left: 37px;
 }
 
 
 .filters-input-radio + label::before {
   content: "";
   position: absolute;
-  left: -42px;
-  top: 0;
+  left: -36px;
+  top: -5px;
 
   width: 25px;
   height: 25px;
@@ -994,8 +1055,8 @@ a.contacts-btn {
 .filters-input-radio:checked + label::before {
   content: "";
   position: absolute;
-  left: -42px;
-  top: 0;
+  left: -36px;
+  top: -5px;
 
   width: 25px;
   height: 25px;
@@ -1016,8 +1077,8 @@ a.contacts-btn {
 .filters-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -42px;
-  top: 0;
+  left: -36px;
+  top: -5px;
 
   width: 28px;
   height: 28px;
@@ -1033,8 +1094,8 @@ a.contacts-btn {
 .filters-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
-  left: -42px;
-  top: 0;
+  left: -36px;
+  top: -5px;
 
   width: 28px;
   height: 28px;
@@ -1087,18 +1148,17 @@ a.contacts-btn {
   /*значение ширины уточнить    */
   padding: 0;
   margin: 0;
-   /*значение сдвига уточнить    */
-  margin-left: 120px;
+  margin-left: 140px;
 }
 
 .catalog-sorting {
   display: flex;
-  margin-bottom: 59px;
+  margin-bottom: 48px;
 }
 
 .catalog-sorting-title {
   margin: 0;
-  margin-right: 267px;
+  margin-right: 273px;
   font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
@@ -1119,7 +1179,7 @@ a.contacts-btn {
 
 .catalog-sorting-list-item a{
 
-  margin-right: 26px;
+  margin-right: 33px;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -1129,6 +1189,13 @@ a.contacts-btn {
   text-align: left;
   text-transform: uppercase;
   opacity: 0.3;
+}
+
+.sorting-list-current-item a {
+  margin: 0;
+  margin-right: 27px;
+  padding: 0;
+
 }
 
 .catalog-sorting-list-item a:hover {
@@ -1160,8 +1227,8 @@ a.contacts-btn {
 
 .catalog-sorting-list-item-down a::after {
   position: absolute;
-  top: 7px;
-  left: 5px;
+  top: 4px;
+  left: 7px;
   content: "";
 
   width: 11px;
@@ -1176,8 +1243,8 @@ a.contacts-btn {
 
 .catalog-sorting-list-item-up a::after {
   position: absolute;
-  top: 8px;
-  left: 22px;
+  top: 3px;
+  left: 36px;
   content: "";
 
   width: 11px;
@@ -1189,19 +1256,20 @@ a.contacts-btn {
 }
 
 .catalog-product-list {
+  min-width: 764px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 28px;
 }
 
 .catalog-product-list-item {
   width: 360px;
   margin: 0;
-  margin-right: 40px;
-  margin-bottom: 33px;
+  margin-right: 38px;
+  margin-bottom: 31px;
   border: 1px solid rgba(77,77,77,0.10);
   box-shadow: 0 6px 15px 0 rgba(0,1,1,0.25);
 }
@@ -1257,9 +1325,8 @@ a.contacts-btn {
 
 .hover-title a{
   display: block;
-  margin-bottom: 0;
   align-self: center;
-  margin: 35px 0 15px 0;
+  margin: 15px 0 15px 0;
   padding: 0;
   font-size: 18px;
   font-weight: bold;
@@ -1268,6 +1335,7 @@ a.contacts-btn {
   line-height: 1.67;
   letter-spacing: normal;
   text-align: center;
+  text-transform: uppercase;
   color: #000000;
 }
 
@@ -1282,7 +1350,7 @@ a.contacts-btn {
 
 
 .hover-description {
-  margin-top: 0;
+  margin-top: -15px;
   display: block;
   font-size: 16px;
   font-weight: normal;
@@ -1297,7 +1365,7 @@ a.contacts-btn {
 .hover-btn {
   width: 200px;
   height: 50px;
-  margin-bottom: 43px;
+  margin-top: 13px;
 }
 
 .hover-btn:hover {
@@ -1315,7 +1383,7 @@ a.contacts-btn {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 58px;
+  margin-bottom: 60px;
 }
 
 .catalog-pagination a{
@@ -1323,7 +1391,7 @@ a.contacts-btn {
   box-sizing: border-box;
   width: 50px;
   height: 50px;
-  padding: 15px 19px;
+  padding: 19px 22px;
   font-size: 16px;
   color: #000000;
   text-align: center;
@@ -1417,8 +1485,8 @@ background: #DFDFDF;
   }
 
 .form-feedback {
-  top: 120px;
-  left: 25%;
+  top: 10%;
+  left: 20%;
 
   box-sizing: border-box;
   width: 960px;
