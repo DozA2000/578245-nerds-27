@@ -56,7 +56,7 @@ input[type="radio"].visually-hidden {
 
 .container {
   width: 1160px;
-  padding: 0 0;
+  padding: 0;
   margin: 0 auto;
 }
 
@@ -89,6 +89,7 @@ div,section,a,ul,li,p,footer,header {
   display: flex;
   padding: 0;
   margin: 0;
+  margin-bottom: 0px;
 }
 
 .header-logo {
@@ -220,6 +221,12 @@ border-bottom: 2px solid #fb565a;
   background-position: 0 0;
 }
 
+
+.slider {
+  padding-top: 40px;
+
+}
+
 .slide-1,
 .slide-2,
 .slide-3 {
@@ -227,10 +234,11 @@ border-bottom: 2px solid #fb565a;
 }
 
 .slide-1 {
-  margin-top: 40px;
-  min-height: 411px;
+ /* padding: 40px;  */
+ /* margin-top: 40px; */
+  min-height: 413px;
   background: url(../img/slide1.png) no-repeat;
-  background-position: bottom 24px right 32px;
+  background-position: bottom 26px right 32px;
 }
 
 .slide-2 {
