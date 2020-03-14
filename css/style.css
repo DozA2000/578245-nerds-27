@@ -9,6 +9,11 @@ body {
   color: #000000;
 }
 
+@font-face {
+  font-family: Roboto; /* Имя шрифта */
+  src: url(fonts/Roboto-Black.ttf); /* Путь к файлу со шрифтом */
+ }
+
 a {
   text-decoration: none;
   color:#000000;
@@ -238,15 +243,18 @@ div,section,a,ul,li,p,footer,header {
 }
 
 .slide-2 {
-  margin-top: 40px;
+  padding: 0;
+
   min-height: 427px;
   background: url(../img/slide2.png) no-repeat;
-  background-position: bottom 1px right 31px;
+  background-position: bottom -3px right 31px;
 }
 
 .slide-3 {
-  margin-top: 40px;
+
   min-height: 427px;
+  padding: 0;
+
   background: url(../img/slide3.png) no-repeat;
   background-position: bottom 1px right 31px;
 }
@@ -509,17 +517,20 @@ margin: 0;
   padding: 0;
 }
 
+
 table.aside-table {
   margin: 0;
   margin-top: 29px;
+  margin-right: -26px;
   padding: 0;
+  padding-left: 2px;
   border-spacing: 18px 22px;
 }
 
 
 
 .aside-table-caption {
-  padding-left: 20px;
+  margin-left: -3px;
   margin-bottom: 32px;
   font-family: Roboto;
   font-size: 16px;
@@ -529,6 +540,7 @@ table.aside-table {
   letter-spacing: normal;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.2px;
   color: #000000;
 
 }
@@ -599,9 +611,9 @@ table.aside-table {
 .partners-list{
 display: flex;
 flex-wrap: wrap;
-justify-content: space-around;
+justify-content: space-between;
 margin: 0;
-padding: 0;
+padding: 0 25px;
 
 list-style: none;
 }
@@ -636,7 +648,7 @@ opacity: 1;
 
 .partners-list-item:nth-child(3) img {
 
-padding-top: 15px;
+padding-top: 18px;
 }
 
 .partners-list-item:nth-child(4) img {
@@ -648,7 +660,7 @@ padding-top: 15px;
 {
   position: absolute;
   content: "";
-  right: -66px;
+  right: -72px;
   top: 42px;
 
   width: 52px;
@@ -692,7 +704,7 @@ padding-top: 15px;
   content: "";
 
   top: 89px;
-  right: 427px;
+  right: 389px;
 
   z-index: 4;
 
@@ -710,7 +722,7 @@ padding-top: 15px;
 .contacts-content {
   position: absolute;
   top: 54px;
-  left: 104px;
+  left: 140px;
   z-index: 3;
   box-sizing: border-box;
 
@@ -1428,7 +1440,7 @@ label.max-price {
 
 
 .pagination-item {
-margin-right: 10px;
+margin-right: 11px;
 }
 
 .catalog-pagination a:hover,
