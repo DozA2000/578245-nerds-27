@@ -10,9 +10,35 @@ body {
 }
 
 @font-face {
-  font-family: Roboto; /* Имя шрифта */
-  src: url(fonts/Roboto-Black.ttf); /* Путь к файлу со шрифтом */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  src:
+  local("Roboto Regular"),
+  url(../fonts/roboto.woff2) format("woff2"),
+  url(../fonts/roboto.woff) format("woff");
  }
+
+ @font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  src:
+  local("Roboto Medium"),
+  url(../fonts/robotomedium.woff2) format("woff2"),
+  url(../fonts/robotomedium.woff) format("woff");
+ }
+
+ @font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  src:
+  local("Roboto Bold"),
+  url(../fonts/robotobold.woff2) format("woff2"),
+  url(../fonts/robotobold.woff) format("woff");
+ }
+
 
 a {
   text-decoration: none;
@@ -76,7 +102,7 @@ div,section,a,ul,li,p,footer,header {
   box-sizing: border-box;
   width: 160px;
   height: 50px;
-  padding: 19px 39px 18px 39px;
+  padding: 17px 41px 18px 40px;
   font: inherit;
   text-align: center;
   font-size: 16px;
@@ -280,7 +306,7 @@ div,section,a,ul,li,p,footer,header {
 .slider-tagline {
   display: block;
   margin: 0;
-  padding: 40px 0 20px 0;
+  padding: 34px 0 26px 0;
   font-family: Roboto;
   font-size: 55px;
   font-weight: 500;
@@ -437,8 +463,8 @@ margin: 0;
 .description .content-tagline {
 
   margin: 0;
-  margin-top: -5px;
-  margin-bottom: 23px;
+  margin-top: -10px;
+  margin-bottom: 29px;
   font-family: Roboto;
   font-size: 45px;
   font-weight: 500;
@@ -499,8 +525,8 @@ margin: 0;
 .content-list-item::before {
   position: absolute;
   content: "";
-  left: -35px;
-  top: 10px;
+  left: -34px;
+  top: 9px;
 
   width: 25px;
   height: 2px;
@@ -870,8 +896,14 @@ a.contacts-btn {
 
 
 .footer b {
+  font-family: Roboto;
   font-size: 36px;
-  line-height: 36px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
   color: #000000;
    }
 
@@ -895,7 +927,7 @@ a.contacts-btn {
 
 .header-inner .page-title {
   margin: 0;
-  margin-top: 79px;
+  margin-top: 73px;
   font-size: 55px;
   font-weight: 500;
   font-stretch: normal;
