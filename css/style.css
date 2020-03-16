@@ -116,7 +116,7 @@ div,section,a,ul,li,p,footer,header {
   text-align: center;
   vertical-align: middle;
   border: none;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .navigation {
@@ -176,6 +176,7 @@ div,section,a,ul,li,p,footer,header {
 
 .user-navigation {
   margin-left: 236px;
+  max-width: 140px;
 }
 
 .user-navigation .basket {
@@ -340,8 +341,7 @@ margin: 0;
 }
 
 .slider-button {
-
-  margin-top: 38px;
+  margin-top: 40px;
   width: 240px;
   height: 50px;
   background-color: #FB565A;
@@ -393,7 +393,7 @@ margin: 0;
 
 .feature-item .button {
   margin: 0;
-  margin-top: 15px;
+  margin-top: 16px;
 }
 
 .btn-red {
@@ -454,7 +454,7 @@ margin: 0;
   position: absolute;
   content: "";
   left: 0;
-  top: -82px;
+  top: -41px;
 
   width: 1160px;
   height: 2px;
@@ -505,7 +505,7 @@ margin: 0;
   }
 
   .description .description-order {
-    margin-top: 35px;
+    margin-top: 37px;
     font-family: Roboto;
     font-weight: 700;
     font-size: 16px;
@@ -541,7 +541,7 @@ margin: 0;
   position: absolute;
   content: "";
   left: -34px;
-  top: 9px;
+  top: 13px;
 
   width: 25px;
   height: 2px;
@@ -565,14 +565,14 @@ table.aside-table {
   margin-right: -26px;
   padding: 0;
   padding-left: 2px;
-  border-spacing: 18px 22px;
+  border-spacing: 18px 28px;
 }
 
 
 
 .aside-table-caption {
   margin-left: -3px;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
   font-family: Roboto;
   font-size: 16px;
   font-weight: bold;
@@ -623,7 +623,7 @@ table.aside-table {
 
 .partners {
   position: relative;
-  margin: 103px 0 125px 0;
+  margin: 96px 0 125px 0;
 }
 
 .partners::before {
@@ -955,10 +955,10 @@ a.contacts-btn {
 
 
 .header-inner {
-  min-height: 355px;
+  min-height: 383px;
   padding: 0;
   margin: 0;
-  margin-bottom: 86px;
+  margin-bottom: 59px;
 }
 
 .header-inner .page-title {
