@@ -1065,7 +1065,7 @@ label.max-price {
   content: "";
   position: absolute;
   left: -36px;
-  top: -8px;
+  top: -5px;
   width: 25px;
   height: 25px;
   -o-object-fit: contain;
