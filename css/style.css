@@ -1057,7 +1057,9 @@ label.max-price {
 }
 
 .filters-input-radio:hover+label::before,
-.filters-input-radio:checked:hover+label::before {
+.filters-input-radio:checked:hover+label::before,
+.filters-input-radio:focus+label::before,
+.filters-input-radio:checked:focus+label::before {
   opacity: 1;
 }
 
@@ -1112,7 +1114,9 @@ label.max-price {
 }
 
 .filters-input-checkbox:hover+label::before,
-.filters-input-checkbox:checked:hover+label::before {
+.filters-input-checkbox:checked:hover+label::before,
+.filters-input-checkbox:focus+label::before,
+.filters-input-checkbox:checked:focus+label::before {
   opacity: 1;
 }
 
@@ -1201,7 +1205,8 @@ label.max-price {
   padding: 0;
 }
 
-.catalog-sorting-list-item a:hover {
+.catalog-sorting-list-item a:hover,
+.catalog-sorting-list-item a:focus {
   opacity: 0.6;
 }
 
